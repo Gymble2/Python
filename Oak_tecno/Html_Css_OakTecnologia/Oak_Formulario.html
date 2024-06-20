@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/Style.css">
+    <title>Formulario_Oak</title>
+    
+</head>
+<body>
+    <main>  
+        
+        <div class="formulario" id="formulario">
+            <form action="form.php" method="post" autocomplete="off" autocapitalize="off">
+                
+                <p id="nome_produto">
+                    <label for="inomeProduto">Nome do produto</label>
+                    <input type="text" name="nomeProduto" id="inomeProduto" required minlength="0"
+                    size="15" placeholder="Nome do produto" autocomplete="off" autocapitalize="off">
+                </p>
+
+                <p id="formulario_descricao">
+                    <label for="idescricaoProduto">Descrição do produto</label><br>
+                    <textarea style="resize: none;" type="msg" name="descricaoProduto" id="descricaoProduto" 
+                    cols="20" rows="10" placeholder="Descrição do produto"></textarea>
+                </p>
+
+                <p id="valor_produto">
+                    <label for="ivalorProduto">Valor do produto</label>
+                    R$ <input type="number" name="ivalorProduto" id="ivalorProduto" step="0.01" min="0.01" >
+                </p>
+                
+                <p class="iest" id="iestform">
+                    <label for="iest">Disponivel para venda?</label>
+                    <select name="estado" id="iest">
+                            <option value="sim" id="sim">SIM</option>
+                            <option value="nao" id="nao">NÃO</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar" >
+                    <input type="reset" value="Limpar">
+                </p>
+
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
